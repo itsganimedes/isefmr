@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEF-MR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <img src="img/ISEF.png">
+            <div>
+                <h1>ISEF</h1>
+                <h2>Mi reputación</h2>
+            </div>
+        </header>
+
+        <div class="clearfix"> </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#buscar">
+                        Buscar Profesor
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobre">
+                        Sobre Nosotros
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="clearfix"> </div>
+
+        
+        <section id="buscar">
+            <div class="busqueda">
+                <h2>Buscar Profesor</h2>
+                <p>¿A qué profesor deseas buscar?</p>
+                <input type="text" name="buscador">
+                <input type="submit" value="Buscar">
+            </div>
+        </section>
+        
+        <section id="sobre">
+            <div class="busqueda">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos desarrolladores independientes e inexpertos de páginas web, y creamos esta página con el objetivo
+                de mejorar el dinamismo de la educación dentro de la universidad/instituto, con un sistema de reputación
+                de los profesores, que serán calificados anónimamente por sus alumnos.
+                </p>
+            </div>
+        </section>
+
+        <section id="content">
+            <h2 id="tit-content">Preguntas frecuentes</h2>
+            <article class="article">
+                <h2>¿Qué es el proyecto MR?</h2>
+                <p>Se trata de un proyecto indie desarrollado con el fin de ayudar a los estudiantes
+                    a tener importancia dentro del ámbito educativo. Esto, ante la problemática de 
+                    encontrarse a profesores que, más que facilitar, dificultan la trayectoria academica 
+                    y el paso de los estudiantes por el camino académico.
+                </p>
+            </article>
+            <article class="article">
+                <h2>¿En qué consiste?</h2>
+                <p>El proyecto consiste en crear páginas web de fácil acceso para los agentes institucionales, 
+                    de forma que se facilite el paso de los estudiantes y se contribuya de forma positiva
+                    a su decisión de quedarse y no abandonar los estudios. 
+                </p>
+            </article>
+            <article class="article">
+                <h2>¿Cómo se utiliza?</h2>
+                <p>La página permite a los estudiantes ver y aportar reseñas sobre los profesores, todo
+                    de forma anónima. De esta forma, cada profesor tendrá un perfil y estadísticas en base
+                    a las opiniones de los alumnos.
+                </p>
+            </article>
+            <article class="article">
+                <h2>¿Cómo contribuye esto a la institución?</h2>
+                <p>Los estudiantes dan sus opiniones anónimamente. Los profesores observan y aprenden de
+                    sus perfiles, que no pueden ser modificados por ellos. Los directivos, pueden analizar
+                    los resultados por sí mismos y tomar las medidas que crean necesarias. Este proyecto es
+                    solo con la intención de mejorar la calidad de trayectoria estudiantil de los alumnos.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Opciones</h2>
+            <div class="aside-options">
+                <ul>
+                    <li>
+                        <a href="profesores.html">Lista de profesores</a>
+                    </li>
+                    <li>
+                        <a href="#">Opiniones generales</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="clearfix"> </div>
+
+        <footer>
+            ISEF MR &copy; Mejoremos la Educación 2025
+        </footer>
+        
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        function mostrarSeccion(id) {
+            // Ocultar todas las secciones
+            document.querySelectorAll("section:not(#content)").forEach(seccion => {
+                seccion.style.opacity = "0"; // Se desvanece
+                setTimeout(() => {
+                    seccion.style.display = "none"; // Se oculta después de la transición
+                }, 500);
+            });
+    
+            // Mostrar la sección seleccionada
+            setTimeout(() => {
+                let seccion = document.getElementById(id);
+                seccion.style.display = "block"; // Se muestra
+                setTimeout(() => {
+                    seccion.style.opacity = "1"; // Se desvanece suavemente al aparecer
+                }, 50);
+            }, 500);
+        }
+    
+        document.querySelector('a[href="#buscar"]').addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarSeccion("buscar");
+        });
+    
+        document.querySelector('a[href="#sobre"]').addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarSeccion("sobre");
+        });
+    });
+    </script>
+</body>
+</html>
