@@ -54,8 +54,12 @@ nav {
     border-bottom: 2px solid black;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
 nav ul li {
-    float: left;
     list-style: none;
     margin: 10px;
 }
