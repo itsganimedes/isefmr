@@ -83,6 +83,11 @@ nav a:hover{
     padding: 10px;
 }
 
+.mail-text{
+    color:black;
+    text-align: center;
+}
+
 .article {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -104,6 +109,7 @@ nav a:hover{
 .profesor{
     color:white;
     margin: 15px;
+    box-sizing: border-box;
     padding: 10px;
     display: flex;
     align-items: flex-start;
