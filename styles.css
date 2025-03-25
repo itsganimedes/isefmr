@@ -49,8 +49,8 @@ header img{
 
 nav {
     background: rgb(4, 37, 48);
-    height: 50px;
-    line-height: 30px;
+    height: 10vb;
+    line-height: 5vb;
     border-bottom: 2px solid black;
 }
 
@@ -58,6 +58,8 @@ nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content:flex-start;
 }
 
 nav ul li {
