@@ -28,39 +28,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#buscar">
-                        Buscar Profesor
-                    </a>
-                </li>
-                <li>
-                    <a href="#sobre">
-                        Sobre Nosotros
+                    <a href="#">
+                        Lista de profesores
                     </a>
                 </li>
             </ul>
         </nav>
         
         <div class="clearfix"> </div>
-
-        
-        <section id="buscar">
-            <div class="busqueda">
-                <h2>Buscar Profesor</h2>
-                <p>¿A qué profesor deseas buscar?</p>
-                <input type="text" name="buscador">
-                <input type="submit" value="Buscar">
-            </div>
-        </section>
-        
-        <section id="sobre">
-            <div class="busqueda">
-                <h2>Sobre Nosotros</h2>
-                <p>Somos desarrolladores independientes e inexpertos de páginas web, y creamos esta página con el objetivo
-                de mejorar el dinamismo de la educación dentro de la universidad/instituto, con un sistema de reputación
-                de los profesores, que serán calificados anónimamente por sus alumnos.
-                </p>
-            </div>
-        </section>
 
         <section id="content">
             <h2 id="tit-content">Preguntas frecuentes</h2>
@@ -96,20 +71,6 @@
             </article>
         </section>
 
-        <aside>
-            <h2>Opciones</h2>
-            <div class="aside-options">
-                <ul>
-                    <li>
-                        <a href="profesores.html">Lista de profesores</a>
-                    </li>
-                    <li>
-                        <a href="#">Opiniones generales</a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
         <div class="clearfix"> </div>
 
         <footer>
@@ -117,38 +78,5 @@
         </footer>
         
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        function mostrarSeccion(id) {
-            // Ocultar todas las secciones
-            document.querySelectorAll("section:not(#content)").forEach(seccion => {
-                seccion.style.opacity = "0"; // Se desvanece
-                setTimeout(() => {
-                    seccion.style.display = "none"; // Se oculta después de la transición
-                }, 500);
-            });
-    
-            // Mostrar la sección seleccionada
-            setTimeout(() => {
-                let seccion = document.getElementById(id);
-                seccion.style.display = "block"; // Se muestra
-                setTimeout(() => {
-                    seccion.style.opacity = "1"; // Se desvanece suavemente al aparecer
-                }, 50);
-            }, 500);
-        }
-    
-        document.querySelector('a[href="#buscar"]').addEventListener("click", function (e) {
-            e.preventDefault();
-            mostrarSeccion("buscar");
-        });
-    
-        document.querySelector('a[href="#sobre"]').addEventListener("click", function (e) {
-            e.preventDefault();
-            mostrarSeccion("sobre");
-        });
-    });
-    </script>
 </body>
 </html>
