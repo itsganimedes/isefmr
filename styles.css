@@ -101,9 +101,14 @@ nav a:hover{
     margin-top: 10px;
 }
 
+.article ul li{
+    margin-left: 3vb;
+}
+
 #tit-content{
     color:black;
     padding: 5px;
+    text-align: center;
 }
 
 .profesores-section{
