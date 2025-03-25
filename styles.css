@@ -18,28 +18,6 @@ body {
     margin: 0% auto;
 }
 
-.profesor{
-    color:white;
-    margin: 15px;
-    padding: 10px;
-    display: flex;
-    align-items: flex-start;
-    border: 2px solid white;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.profesor h2{
-    word-wrap: break-word;
-    white-space: nowrap; /* Previene el salto de línea dentro del h2 */
-    overflow: hidden; /* Oculta el desbordamiento en el h2 */
-    text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
-    margin: 0;
-    padding-right: 10px; /* Espacio entre el h2 y el textarea */
-    flex-shrink: 0; /* Asegura que el h2 no se reduzca en tamaño */
-}
-
 header {
     background: rgb(225, 230, 236);
     width: 100%;
@@ -121,6 +99,33 @@ nav a:hover{
 #tit-content{
     color:black;
     padding: 5px;
+}
+
+.profesor{
+    color:white;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid white;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.profesor h2{
+    word-wrap: break-word;
+    white-space: nowrap; /* Previene el salto de línea dentro del h2 */
+    overflow: hidden; /* Oculta el desbordamiento en el h2 */
+    text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
+    margin: 0;
+    padding-right: 10px; /* Espacio entre el h2 y el textarea */
+    flex-shrink: 0; /* Asegura que el h2 no se reduzca en tamaño */
+}
+
+.profesor-text{
+    width: 100%;
+    height: 100%;
 }
 
 footer {
