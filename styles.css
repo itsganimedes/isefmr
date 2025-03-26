@@ -93,6 +93,10 @@ nav a:hover{
     text-align: center;
 }
 
+.mail-text span{
+    color:red;
+}
+
 .article {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -105,6 +109,7 @@ nav a:hover{
 .article p {
     margin-top: 10px;
 }
+
 
 .article ul li{
     margin-left: 3vb;
