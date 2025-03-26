@@ -156,6 +156,8 @@ nav a:hover{
 .h2-p-profesor{
     display: flex;
     flex-direction: column;
+    padding-left: 1vb;
+    border-left: 0.5vb solid white;
 }
 
 .positivas{
