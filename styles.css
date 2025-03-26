@@ -49,16 +49,15 @@ header img{
 
 nav {
     background: rgb(4, 37, 48);
-    height: 12vb;
-    line-height: 7vb;
+    min-height: 7vb;
+    line-height: 4vb;
     border-bottom: 2px solid black;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:flex-start;
+    flex-wrap: wrap;
 }
 
 nav ul li {
