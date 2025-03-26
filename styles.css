@@ -97,6 +97,12 @@ nav a:hover{
     color:red;
 }
 
+.mail-text-profesores{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 .article {
     margin-top: 20px;
     margin-bottom: 20px;
