@@ -81,12 +81,30 @@ nav a:hover{
 }
 
 #content {
-    float: left;
-    width: calc(100% - 20px);
+    width: calc(100% - 6vb);
     background: lightblue;
-    min-height: 500px;
-    padding: 10px;
+    min-height: 70vb;
+    padding: 3vb;
+    color: black;
 }
+
+#content2 {
+    width: calc(100% - 6vb);
+    background: lightblue;
+    padding: 3vb;
+    min-height: 70vb;
+    color:black;
+}
+
+#content2 ul{
+    margin-left: 3vb;
+}
+
+#content2 span{
+    color:rgb(7, 75, 28);
+}
+
+
 
 .mail-text{
     color:black;
