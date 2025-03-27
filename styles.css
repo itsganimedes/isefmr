@@ -152,8 +152,6 @@ nav a:hover{
     margin: 1% 1% 0% 0%;
     box-sizing: border-box;
     padding: 10px;
-    display: flex;
-    align-items: flex-start;
     border: 2px solid white;
     width: 100%;
     border-radius: 8px;
@@ -162,8 +160,8 @@ nav a:hover{
 
 .profesor h2{
     margin-right: 2vb;
-    width: 20%;
-    max-width: 20%;
+    width: 80%
+    max-width: 80%;
     /*word-wrap: break-word;
     white-space: nowrap; 
     overflow: hidden; 
@@ -176,17 +174,18 @@ nav a:hover{
 .profesor-text{
     width: 100%;
     height: 100%;
-    margin-left: 2vb;
+    margin-left: 0vb;
     display: flex;
     flex-direction: column;
+    padding-top: 2vb;
 }
 
 .h2-p-profesor{
     display: flex;
     flex-direction: column;
     min-width: 30vb;
-    padding-left: 1vb;
-    border-left: 0.5vb solid white;
+    padding: 2vb;
+    border-bottom: 0.5vb solid white;
 }
 
 .positivas{
