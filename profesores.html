@@ -37,7 +37,24 @@
             </ul>
         </nav>
 
-        <section class="profesores-section">
+
+        <div class="list-profesores">
+            <h2>Lista de profesores</h2>
+            <p>Los 5 mejor posicionados</p>
+            <ol>
+                <li>Nadie.</li>
+                <li>Nadie.</li>
+                <li>Nadie.</li>
+                <li>Nadie.</li>
+                <li>Nadie.</li>
+            </ol>
+        </div>
+
+
+
+
+
+        <section class="profesores-section" id="profesores-id"">
 
             <!--PROFESOR-->
 
@@ -48,24 +65,24 @@
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>Aún no hay opiniones sobre este profesor.
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
             
             <div class="profesor">
                 <div class="h2-p-profesor">
                     <h2>Ceciliana Godoy</h2> <!--NOMBRE-->
-                    <p class="positivas">1 opiniones positivas</p> <!--OP POSITIVAS-->
+                    <p class="positivas">0 opiniones positivas</p> <!--OP POSITIVAS-->
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>"Los skibidi" dice: "Es una crak la chabona la quiero una banda es la mejor profe".
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
 
+
             <!--PROFESOR-->
+
             <div class="profesor">
                 <div class="h2-p-profesor">
                     <h2>Danite Carrizo</h2> <!--NOMBRE-->
@@ -73,14 +90,13 @@
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>Aún no hay opiniones sobre este profesor.
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
 
 
-
             <!--PROFESOR-->
+            
             <div class="profesor">
                 <div class="h2-p-profesor">
                     <h2>Maxsie Martínez</h2> <!--NOMBRE-->
@@ -88,12 +104,13 @@
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>Aún no hay opiniones sobre este profesor.
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
 
+
             <!--PROFESOR-->
+
             <div class="profesor">
                 <div class="h2-p-profesor">
                     <h2>Marei Alday</h2> <!--NOMBRE-->
@@ -101,12 +118,13 @@
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>Aún no hay opiniones sobre este profesor.
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
 
+
             <!--PROFESOR-->
+
             <div class="profesor">
                 <div class="h2-p-profesor">
                     <h2>Pearl Speso</h2> <!--NOMBRE-->
@@ -114,10 +132,12 @@
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>Aún no hay opiniones sobre este profesor.
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
+
+
+            <!--PROFESOR-->
 
             <div class="profesor">
                 <div class="h2-p-profesor">
@@ -126,8 +146,7 @@
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
                 <div class="profesor-text">
-                    <p>Aún no hay opiniones sobre este profesor.
-                    </p>
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
                 </div>
             </div>
 
@@ -135,9 +154,34 @@
 
         </section>
 
+
+
+
+
+
         <footer>
             ISEF MR &copy; Mejoremos la Educación 2025
         </footer>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Selecciona todos los divs que contienen información de cada profesor
+        let profesores = document.querySelectorAll(".profesor");
+
+    // Para cada profesor, limita el número de opiniones a 3
+        profesores.forEach(function (profesor) {
+        let opiniones = profesor.querySelectorAll(".opinion"); // Selecciona todas las opiniones de ese profesor
+        let maxOpiniones = 3;
+
+        // Si hay más de 3 opiniones, elimina las demás
+        if (opiniones.length > maxOpiniones) {
+            for (let i = 0; i < opiniones.length - maxOpiniones; i++) {
+                opiniones[i].remove();
+            }
+        }
+    });
+});
+    </script>
 </body>
 </html>
