@@ -82,7 +82,7 @@ nav a:hover{
 
 #content {
     width: calc(100% - 6vb);
-    background: lightblue;
+    background: rgb(182, 154, 122);
     min-height: 70vb;
     padding: 3vb;
     color: black;
@@ -90,7 +90,7 @@ nav a:hover{
 
 #content2 {
     width: calc(100% - 6vb);
-    background: lightblue;
+    background: rgb(182, 154, 122);
     padding: 3vb;
     min-height: 70vb;
     color:black;
