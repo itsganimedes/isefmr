@@ -56,7 +56,10 @@
 
 
 
-
+        <div class="profesores-search">
+            <input type="text" id="busqueda" placeholder="Escribe el apellido del profesor...">
+            <button onclick="buscarProfesor()">Buscar</button>
+        </div>
 
         <section class="profesores-section" id="profesores-id"">
 
@@ -73,6 +76,22 @@
                 </div>
             </div>
             
+
+            <!--PROFESOR-->
+            
+            <div class="profesor">
+                <div class="h2-p-profesor">
+                    <h2>Cecily Almirón</h2> <!--NOMBRE-->
+                    <p class="positivas">0 opiniones positivas</p> <!--OP POSITIVAS-->
+                    <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
+                </div>
+                <div class="profesor-text">
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
+                </div>
+            </div>
+
+            <!--PROFESOR-->
+
             <div class="profesor">
                 <div class="h2-p-profesor">
                     <h2>Ceciliana Godoy</h2> <!--NOMBRE-->
@@ -100,6 +119,34 @@
 
 
             <!--PROFESOR-->
+
+            <div class="profesor">
+                <div class="h2-p-profesor">
+                    <h2>Marei Alday</h2> <!--NOMBRE-->
+                    <p class="positivas">0 opiniones positivas</p> <!--OP POSITIVAS-->
+                    <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
+                </div>
+                <div class="profesor-text">
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
+                </div>
+            </div>
+
+
+            <!--PROFESOR-->
+
+            <div class="profesor">
+                <div class="h2-p-profesor">
+                    <h2>Marit Agüero</h2> <!--NOMBRE-->
+                    <p class="positivas">0 opiniones positivas</p> <!--OP POSITIVAS-->
+                    <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
+                </div>
+                <div class="profesor-text">
+                    <div class="opinion"><p>Aún no hay opiniones sobre este profesor.</p></div>
+                </div>
+            </div>
+
+
+            <!--PROFESOR-->
             
             <div class="profesor">
                 <div class="h2-p-profesor">
@@ -117,7 +164,7 @@
 
             <div class="profesor">
                 <div class="h2-p-profesor">
-                    <h2>Marei Alday</h2> <!--NOMBRE-->
+                    <h2>Natail Heredia</h2> <!--NOMBRE-->
                     <p class="positivas">0 opiniones positivas</p> <!--OP POSITIVAS-->
                     <p class="negativas">0 opiniones negativas</p> <!--OP NEGATIVAS-->
                 </div>
@@ -168,6 +215,30 @@
         </footer>
     </div>
 
+
+
+
+
+    <!--JS de buscador-->
+    <script>
+        function buscarProfesor() {
+            let nombre = document.getElementById("busqueda").value.toLowerCase();
+            let profesores = document.querySelectorAll(".profesor"); 
+            
+            for (let prof of profesores) {
+                let nombreProfesor = prof.querySelector("h2").innerText.toLowerCase();
+                
+                if (nombreProfesor.includes(nombre)) {
+                    prof.scrollIntoView({ behavior: "smooth", block: "start" });
+                    return;
+                }
+            }
+            alert("Profesor no encontrado"); 
+        }
+    </script>
+
+
+    <!--JS de borrar opiniones antiguas-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         let profesores = document.querySelectorAll(".profesor");
@@ -182,7 +253,9 @@
             }
         }
     });
-});
+    });
     </script>
+
+
 </body>
 </html>

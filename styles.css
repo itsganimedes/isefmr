@@ -159,6 +159,51 @@ nav a:hover{
     list-style-position: inside;
 }
 
+.profesores-search{
+    width: 70vb;
+    padding: 2vb;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+    margin: 0% auto;
+}
+
+.profesores-search input{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 50vb;
+    height: 3vb;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profesores-search:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.profesores-search button{
+    width: calc(30% - 2vb);
+    padding: 1vb;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2vb;
+    transition: 0.3s;
+}
+
+.profesores-search button:hover{
+    background-color: #0056b3;
+}
 
 .profesores-section{
     display: flex;
