@@ -160,7 +160,9 @@ nav a:hover{
 }
 
 .profesores-search{
-    width: 70vb;
+    width: 30%;
+    max-width: 30%;
+    box-sizing: border-box;
     padding: 2vb;
     font-size: 16px;
     border: 2px solid #007BFF;
@@ -172,10 +174,10 @@ nav a:hover{
 }
 
 .profesores-search input{
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 50vb;
+    width: 80%; /* Ocupa todo el ancho disponible */
+    max-width: 80%;
     height: 3vb;
-    padding: 8px 12px;
+    padding: 1vb;
     font-size: 16px;
     border: 2px solid #007BFF;
     border-radius: 6px;
@@ -190,6 +192,7 @@ nav a:hover{
 
 .profesores-search button{
     width: calc(30% - 2vb);
+    max-width: 30%;
     padding: 1vb;
     font-size: 16px;
     background-color: #007BFF;
