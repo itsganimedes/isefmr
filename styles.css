@@ -7,6 +7,7 @@ body {
     background: rgb(9, 0, 41);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    transition: 0.5s;
 }
 
 #container {
@@ -19,7 +20,7 @@ body {
 }
 
 header {
-    background: rgb(225, 230, 236);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(185, 185, 185));
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -45,6 +46,7 @@ header img{
     width: 140px;
     height: 150px;
     margin-right: 15px;
+    border: 2px solid red;
 }
 
 nav {
@@ -82,18 +84,28 @@ nav a:hover{
 
 #content {
     width: calc(100% - 6vb);
-    background: rgb(164, 201, 192);
+    background: linear-gradient(to bottom, rgb(164, 201, 192), rgb(125, 155, 146));
+    box-shadow: inset 0 8px 50px rgb(3, 37, 32);
     min-height: 70vb;
     padding: 3vb;
     color: black;
 }
 
+#content h2{
+    text-shadow: 4px 4px 10px rgba(37, 220, 233);
+}
+
 #content2 {
     width: calc(100% - 6vb);
-    background: rgb(164, 201, 192);
+    background: linear-gradient(to bottom, rgb(164, 201, 192), rgb(125, 155, 146));
+    box-shadow: inset 0 8px 50px rgb(3, 37, 32);
     padding: 3vb;
     min-height: 70vb;
     color:black;
+}
+
+#content2 h2{
+    text-shadow: 4px 4px 10px rgba(37, 220, 233);
 }
 
 #content2 ul{
@@ -210,6 +222,11 @@ nav a:hover{
 .profesores-section{
     display: flex;
     flex-direction: column;
+    
+}
+
+.profesores-search ol{
+    list-style-position: inside;
 }
 
 .profesor{
@@ -227,6 +244,7 @@ nav a:hover{
     margin-right: 2vb;
     width: 80%
     max-width: 80%;
+    text-shadow: 4px 4px 10px rgba(255, 75, 43, 0.5);
     /*word-wrap: break-word;
     white-space: nowrap; 
     overflow: hidden; 
